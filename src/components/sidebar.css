@@ -1,0 +1,72 @@
+/* Main container */
+.main-content {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed; /* Make the sidebar overlay other elements */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  background-color: #2c3e50;
+  color: #ecf0f1; 
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem; /* Reduced padding */
+  transition: width 0.3s ease; /* Smooth width transition */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  z-index: 1000; /* Ensure the sidebar is above other elements */
+}
+
+.sidebar.collapsed {
+  width: 30px; /* Reduced collapsed width */
+  align-items: center; /* Center align items */
+}
+
+.sidebar.expanded {
+  width: 150px; /* Reduced expanded width */
+  align-items: flex-start; /* Align items to the left when expanded */
+}
+
+/* Toggle button */
+.toggle-btn {
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: none;
+  align-self: center;
+
+  padding: 0.4rem; /* Reduced padding for smaller toggle button */
+  margin-bottom: 0.5rem; /* Adjusted margin */
+  cursor: pointer;
+   /* Align toggle button to the right */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 0.5rem 0; /* Reduced margin between list items */
+  font-size: 0.9rem; /* Reduced font size */
+  cursor: pointer;
+  text-align: left; /* Align text when expanded */
+}
+
+.sidebar ul li:hover {
+  text-decoration: underline;
+}
+
+/* Main content adjustments */
+.main-content {
+  margin-left: 150px; /* Adjust for reduced expanded sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed + .main-content {
+  margin-left: 30px; /* Adjust for reduced collapsed sidebar width */
+}

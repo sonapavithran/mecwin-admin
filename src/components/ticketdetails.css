@@ -1,0 +1,35 @@
+.ticket-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Reduced gap between the charts */
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+  width: 500px; /* Rectangle width */
+  height: 250px; /* Rectangle height */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: auto;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.chart h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #34495e;
+  text-align: center;
+}
+
+.chart canvas {
+  max-height: 200px; /* Adjust canvas to fit within rectangle */
+  max-width: 100%; /* Use full width */
+}

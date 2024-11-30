@@ -1,0 +1,84 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+  padding: 5px;
+}
+
+.main-content {
+  margin-left: 250px;
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  width: 250px;
+  height: 100vh;
+  transition: width 0.3s ease;
+  overflow-y: auto;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  background-color: lightgray;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 70px;
+}
+
+.toggle-btn {
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #3b5998;
+}
+
+.sidebar.collapsed + .main-content {
+  margin-left: 60px;
+}
+
+/* Section containing both DistributorDetails and RegionView */
+.section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Distributor Container */
+.distributor-container {
+  flex: 1;
+  max-width: 48%; /* Almost half the section */
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Region Container */
+.region-container {
+  flex: 1;
+  max-width: 48%; /* Almost half the section */
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

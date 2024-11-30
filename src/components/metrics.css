@@ -1,0 +1,43 @@
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.metric {
+  flex: 1;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #34495e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metric:hover {
+  background-color: #d4e6f1;
+  cursor: pointer;
+}
+
+.metric-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metric .number {
+  font-size: 1.8rem; /* Larger font size for the number */
+  font-weight: bold; /* Bold numbers */
+  color: #2c3e50; /* Darker color for emphasis */
+}
+
+.metric .label {
+  font-size: 0.9rem; /* Slightly smaller font for labels */
+  color: #7f8c8d; /* Softer color for labels */
+}
+
+.icon {
+  font-size: 1.8rem; /* Icon size matches the number font size */
+  color: #3498db; /* Color for the icons */
+}

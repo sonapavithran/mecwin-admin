@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem; 
+  background-color: #f4f6f7;
+  /* border-bottom: 1px solid #ddd; */
+  width: 100%; /* Full width */
+  padding: 10px 20px; /* Add padding for better spacing */
+  box-sizing: border-box;
+  /* position: relative; */
+}
+
+.logo {
+  height: 30px; /* Maintain smaller logo size */
+  width: auto; /* Maintain aspect ratio */
+  margin-left: 80px; /* Adjust margin as needed */
+}
+
+.dashboard-title {
+  flex: 1; /* Take remaining space between logo and user info */
+  text-align: center;
+  font-size: 1.2rem; /* Slightly larger title font size */
+  color: #34495e;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.9rem; /* Smaller font size for header-right content */
+  gap: 10px; /* Add spacing between icons/text */
+}
+
+.header-right span {
+  font-size: 0.9rem; /* Ensure small font size for span elements */
+  cursor: pointer;
+}
+
+.header-right span:hover {
+  color: #3498db; /* Add hover effect */
+}
